@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>징글벨 타이핑</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <!-- 시작 화면 -->
+    <div id="start-screen">
+      <h1>징글벨 타이핑</h1>
+      <div id="start-instruction">
+        음악에 맞춰 가사의 초성을 입력하자!<br><br>
+        <span class="example"> (예시)흰눈 사이로 → ㅎㄴㅅㅇㄹ</span>
+      </div>
+      <button id="start-btn">시작하기</button>
+    </div>
+    
+    <!-- 가사 영역 (처음엔 숨김) -->
+    <div id="lyrics" style="display:none;">
+      <p>흰눈 사이로 썰매를 타고</p>
+      <p>달리는 기분 상쾌도 하다</p>
+      
+      <p>종이 울려서 장단 맞추니</p>
+      <p>흥겨워서 소리높여 노래 부르자</p>
+      
+      <p>종소리 울려라 종소리 울려</p>
+      <p>우리 썰매 빨리 달려 종소리 울려라</p>
+      
+      <p>종소리 울려라 종소리 울려</p>
+      <p>기쁜 노래 부르면서 빨리 달리자</p>
+    </div>
+    
+    <!-- 팝업 영역 -->
+    <div id="popup-overlay">
+      <div id="popup">
+        <h2>메리 크리스마스!</h2>
+        <p>모든 가사를 완성하셨네요!</p>
+        <button id="retry-btn">다시 하기</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
